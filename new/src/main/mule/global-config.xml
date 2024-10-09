@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce" xmlns:s3="http://www.mulesoft.org/schema/mule/s3"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/current/mule-s3.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd">
+	<s3:config name="Amazon_S3_Configuration" doc:name="Amazon S3 Configuration" doc:id="e20303df-05a0-4721-b081-c1c0c191c6df" >
+		<s3:connection accessKey="AKIA5G2VGLSKZHKTKBWC" secretKey="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" region="ap-southeast-2"/>
+	</s3:config>
+	<salesforce:sfdc-config name="Salesforce_Config" doc:name="Salesforce Config" doc:id="7c58d373-b650-42cf-83cb-6cef56396421" >
+		<salesforce:basic-connection username="podrallapradeepreddy@gmail.com" password="Chinna@4567" securityToken="ohJJ7SyfK6KVIAVyEc8VSC0Z" url="https://login.salesforce.com/services/Soap/u/60.0" />
+	</salesforce:sfdc-config>
+	
+</mule>
